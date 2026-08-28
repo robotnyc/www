@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Disintegrate — Robotnyc</title>
+<title>ROBOTNYC</title>
+<link rel="canonical" href="https://www.robotnyc.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Audiowide&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -33,38 +34,43 @@
     text-transform:uppercase;
     letter-spacing:.06em;
   }
-  header a:hover{ text-decoration:underline; }
 
   .hero{
-    padding:20px 0 40px;
+    padding:20px 0 60px;
+  }
+  .title-row{
+    display:flex;
+    align-items:center;
+    gap:0.02em;
+    flex-wrap:nowrap;
+    width:100%;
   }
   h1.giant{
     font-family:'Audiowide', sans-serif;
     font-weight:400;
-    font-size:clamp(36px, 11vw, 130px);
+    font-size:clamp(26px, 11.5vw, 150px);
     line-height:0.9;
     margin:0;
     letter-spacing:0px;
     color:var(--black);
+    white-space:nowrap;
   }
-
-  .byline{
-    margin-top:20px;
-    font-size:15px;
-    font-weight:700;
-    text-transform:uppercase;
-    letter-spacing:.06em;
-  }
-
-  .coming-soon{
+  .robot-icon{
+    height:clamp(24px, 10.5vw, 136px);
+    aspect-ratio: 1 / 1;
+    width:auto;
     display:inline-block;
-    margin-top:22px;
-    font-family:'Archivo Black', sans-serif;
-    font-size:14px;
-    letter-spacing:.02em;
-    border:2px solid var(--black);
-    padding:8px 16px;
+    flex-shrink:0;
   }
+
+  .tagline{
+    margin-top:28px;
+    max-width:600px;
+    font-size:17px;
+    line-height:1.6;
+    font-weight:500;
+  }
+  .tagline b{ font-weight:700; }
 
   hr.line{
     border:none;
@@ -72,27 +78,17 @@
     margin:0;
   }
 
-  .blurb-section{
-    padding:44px 0 60px;
+  .sections{
+    padding:50px 0 70px;
   }
   .section-label{
     font-size:12px;
     font-weight:700;
     text-transform:uppercase;
     letter-spacing:.1em;
-    margin-bottom:26px;
-  }
-  .blurb p{
-    font-size:16px;
-    line-height:1.7;
-    font-weight:500;
-    max-width:680px;
-    margin:0 0 18px;
+    margin-bottom:30px;
   }
 
-  .sections{
-    padding:0 0 70px;
-  }
   .row{
     display:flex;
     justify-content:space-between;
@@ -105,7 +101,7 @@
   .row:first-of-type{ border-top:2px solid var(--black); }
   .row .name{
     font-family:'Archivo Black', sans-serif;
-    font-size:clamp(24px, 4vw, 40px);
+    font-size:clamp(26px, 4.5vw, 46px);
     letter-spacing:-0.5px;
   }
   .row .desc{
@@ -113,8 +109,6 @@
     font-weight:500;
     max-width:320px;
     text-align:right;
-    display:flex;
-    align-items:center;
   }
   .row:hover{ background:rgba(11,12,14,0.06); }
 
@@ -143,37 +137,37 @@
 <body>
 
 <header>
-  <div>Disintegrate</div>
-  <a href="https://www.robotnyc.com/">&larr; Home</a>
+  <div>Robotnyc</div>
+  <div>Est. 2060</div>
 </header>
 
 <div class="wrap">
 
   <div class="hero">
-    <h1 class="giant">DISINTEGRATE</h1>
-    <div class="byline">by Rachel Magasweran</div>
-    <div class="coming-soon">Coming Soon</div>
-  </div>
-
-  <hr class="line">
-
-  <div class="blurb-section">
-    <div class="section-label">The Book</div>
-    <div class="blurb">
-      <p>Rai escapes from her tech bro-pocalypse planet to find a better life on an alternative planet where technology is old and nature still thrives. When integrating into this alien planet feels impossible, she learns of the Disintegration Zone, a utopia bubble sealed off from &ldquo;the others&rdquo; and signs up without hesitation.</p>
-      <p>Then she starts falling for Logan.</p>
-      <p>Now she must decide: leave him behind for paradise, or risk her one shot at utopia to stay.</p>
+    <div class="title-row">
+      <h1 class="giant">R</h1>
+      <svg class="robot-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill="#0b0c0e"><path d="M256 18.3c-20.2 0-36.6 16.4-36.6 36.6 0 13.5 7.4 25.1 18.3 31.4V128h-91.4c-50.3 0-91.4 41.1-91.4 91.4V256H0v146.3h54.9v91.4h402.3v-91.4H512V256h-54.9v-36.6c0-50.3-41.1-91.4-91.4-91.4h-91.4V86.3c10.9-6.4 18.3-17.9 18.3-31.4 0-20.3-16.4-36.6-36.6-36.6M146.3 164.6h219.4c30.5 0 54.9 24.4 54.9 54.9v237.7H384v-91.4H128v91.4H91.4V219.4c0-30.5 24.4-54.8 54.9-54.8m36.6 73.1c-20.2 0-36.6 16.4-36.6 36.6s16.4 36.6 36.6 36.6 36.6-16.4 36.6-36.6-16.4-36.6-36.6-36.6m146.2 0c-20.2 0-36.6 16.4-36.6 36.6s16.4 36.6 36.6 36.6 36.6-16.4 36.6-36.6-16.3-36.6-36.6-36.6M36.6 292.6h18.3v73.1H36.6zm420.5 0h18.3v73.1h-18.3zM164.6 402.3h36.6v54.9h-36.6zm73.1 0h36.6v54.9h-36.6zm73.2 0h36.6v54.9h-36.6z"/></svg>
+      <h1 class="giant">BOTNYC</h1>
     </div>
+    <p class="tagline"><b>Lucas</b> builds open source tools. <b>Rachel</b> is writing a sci-fi romance novel &ldquo;Disintegrate&rdquo; and has other random thoughts on Substack. We hope you like our creations.</p>
   </div>
 
   <div class="sections">
-    <div class="section-label">More</div>
+    <div class="section-label">Creations</div>
 
-    <a class="row" href="https://music.youtube.com/playlist?list=PLq44BpXZM4VB52tho1MQeGUDC1796ACkg&si=gddcL3lZ_KnBIHzl" target="_blank">
-      <div class="name">Soundtrack</div>
-      <div class="desc">
-        <svg width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#0b0c0e"><path d="M9 3v10.55A4 4 0 1 0 11 17V7h6V3z"/></svg>
-      </div>
+    <a class="row" href="https://plotline.robotnyc.com/" target="_blank">
+      <div class="name">Plotline</div>
+      <div class="desc">A free, open-source Google Docs add-on for tracking your writing progress.</div>
+    </a>
+
+    <a class="row" href="https://rachelrobot.substack.com/" target="_blank">
+      <div class="name">Substack</div>
+      <div class="desc">Wild thoughts and essays by Rachel.</div>
+    </a>
+
+    <a class="row" href="https://www.robotnyc.com/disintegrate.html" target="_blank">
+      <div class="name">Disintegrate</div>
+      <div class="desc">Novel in Progress.</div>
     </a>
   </div>
 
